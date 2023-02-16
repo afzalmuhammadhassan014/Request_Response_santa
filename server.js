@@ -37,6 +37,8 @@ app.post('/success', (request, response) => {
 
 function sendEmail(data){
   const nodemailer = require('nodemailer')
+  //for seeing the emails
+  //https://ethereal.email/
   const transpoter = nodemailer.createTransport({
     service: 'SMTP',
       host: 'smtp.ethereal.email',
